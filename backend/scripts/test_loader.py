@@ -14,7 +14,11 @@ print(f"Pages Loaded: {len(documents)}")
 
 print()
 
-print(documents[0])
+# print(documents[0])
+
+print("=" * 80)
+print(documents[0].text[:1500])
+print("=" * 80)
 
 # saving the prcessed documents to a json file
 DocumentService.save_documents(

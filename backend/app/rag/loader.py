@@ -1,6 +1,7 @@
 import pdfplumber
 
 from backend.app.models.document import Document
+from backend.app.utils.text_utils import clean_text
 
 
 class PDFLoader:
@@ -17,7 +18,8 @@ class PDFLoader:
 
             for page_number, page in enumerate(pdf.pages, start=1):
 
-                text = page.extract_text()
+                #text = page.extract_text() #old raw
+                text = clean_text(page.extract_text() or "")
 
                 if not text:
                     continue

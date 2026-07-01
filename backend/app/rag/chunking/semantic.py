@@ -1,4 +1,4 @@
-from backend.app.chunking.base import ChunkingStrategy
+from backend.app.rag.chunking.base import ChunkingStrategy
 
 
 class SemanticChunker(ChunkingStrategy):

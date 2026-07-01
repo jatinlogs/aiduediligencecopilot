@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     # Qdrant
     QDRANT_URL: str
     QDRANT_COLLECTION: str
+    VECTOR_SIZE: int
 
     # Neo4j
     NEO4J_URI: str = ""

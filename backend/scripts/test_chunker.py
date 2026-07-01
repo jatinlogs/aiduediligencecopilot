@@ -1,4 +1,4 @@
-from backend.app.rag.loader import PDFLoader
+from backend.app.rag.ingestion.loader import PDFLoader
 from backend.app.rag.chunker import Chunker
 from backend.app.services.storage_service import StorageService
 

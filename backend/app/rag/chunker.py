@@ -1,9 +1,9 @@
-import uuid
-
-from backend.app.config.settings import settings
-from backend.app.models.chunk import Chunk
-from backend.app.models.document import Document
-from backend.app.chunking.fixed import FixedCharacterChunker
+# -----old simple chunker ------
+# import uuid
+# from backend.app.config.settings import settings
+# from backend.app.models.chunk import Chunk
+# from backend.app.models.document import Document
+from backend.app.rag.chunking.fixed import FixedCharacterChunker
 
 
 class Chunker:

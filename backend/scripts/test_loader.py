@@ -1,4 +1,4 @@
-from backend.app.rag.loader import PDFLoader
+from backend.app.rag.ingestion.loader import PDFLoader
 from backend.app.services.document_service import DocumentService
 
 loader = PDFLoader(

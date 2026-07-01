@@ -3,7 +3,7 @@ import uuid
 from backend.app.config.settings import settings
 from backend.app.models.chunk import Chunk
 from backend.app.models.document import Document
-from backend.app.chunking.base import ChunkingStrategy
+from backend.app.rag.chunking.base import ChunkingStrategy
 
 
 
